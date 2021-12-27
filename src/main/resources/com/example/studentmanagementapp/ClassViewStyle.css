@@ -1,0 +1,13 @@
+#btnDelete{
+  -fx-background-color: transparent;
+   -fx-border-radius: 8px;
+   -fx-border-width: 1.5px;
+   -fx-border-color: black;
+   -fx-text-fill: red;
+}
+
+#btnDelete:hover{
+   -fx-background-color: red;
+   -fx-background-radius: 8px;
+   -fx-text-fill: #ffffff;
+}

@@ -1,0 +1,56 @@
+
+#btnAdd{
+  -fx-background-color: tomato;
+  -fx-text-fill: #fff;
+  -fx-background-radius: 5px;
+  -fx-border-radius: 5px;
+}
+
+#cmbJob{
+  -fx-background-color: #fff;
+  -fx-text-fill: #fff;
+}
+
+#cmbClass{
+
+  -fx-background-color: #fff;
+  -fx-text-fill: white;
+}
+
+#cmbMentor{
+  -fx-background-color: #fff;
+  -fx-text-fill: #fff;
+}
+
+#btnEdit{
+   -fx-background-color: tomato;
+   -fx-text-fill: #fff;
+   -fx-background-radius: 5px;
+   -fx-border-radius: 5px;
+}
+
+#btnDelete{
+   -fx-background-color: tomato;
+   -fx-background-radius: 5px;
+   -fx-border-radius: 5px;
+   -fx-text-fill: #fff;
+}
+
+#btnDelete:hover{
+   -fx-background-color: #FF401F;
+
+}
+
+#btnAdd:hover{
+   -fx-background-color: #FF401F;
+
+}
+
+#btnEdit:hover{
+  -fx-background-color: #FF401F;
+
+
+}
+
+
+
