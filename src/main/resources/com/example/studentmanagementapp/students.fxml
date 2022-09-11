@@ -6,6 +6,7 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
@@ -17,15 +18,8 @@
          <children>
             <HBox prefHeight="51.0" prefWidth="974.0" spacing="12.0">
                <children>
-                  <ComboBox fx:id="cmbJob" prefHeight="29.0" prefWidth="113.0" promptText="Occupation" stylesheets="@StudentViewStyle.css">
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor></ComboBox>
-                  <ComboBox fx:id="cmbClass" prefHeight="29.0" prefWidth="99.0" promptText="Class" stylesheets="@StudentViewStyle.css">
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor></ComboBox>
-                  <ComboBox fx:id="cmbMentor" prefHeight="29.0" prefWidth="94.0" promptText="Mentor" stylesheets="@StudentViewStyle.css">
+                  <TextField fx:id="txtSearch" prefHeight="29.0" prefWidth="223.0" promptText="Search" style="-fx-background-color: #fff;" />
+                  <ComboBox fx:id="cmbJob" prefHeight="29.0" prefWidth="149.0" promptText="Sort By Occupation" stylesheets="@StudentViewStyle.css">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></ComboBox>
@@ -58,46 +52,41 @@
             </HBox>
          </children>
       </HBox>
-      <TableView fx:id="tableView" prefHeight="535.0" prefWidth="1065.0" stylesheets="@StudentViewStyle.css">
+      <TableView fx:id="tableView" prefHeight="535.0" prefWidth="1000.0" stylesheets="@StudentViewStyle.css">
          <columns>
-            <TableColumn fx:id="colName" prefWidth="113.33334600925446" text="Name">
+            <TableColumn fx:id="colName" minWidth="0.0" prefWidth="141.33333837985992" text="Name">
                <cellValueFactory>
                   <PropertyValueFactory property="name" />
                </cellValueFactory>
             </TableColumn>
-            <TableColumn fx:id="colAge" minWidth="0.0" prefWidth="72.6666488647461" text="Age">
+            <TableColumn fx:id="colAge" minWidth="0.0" prefWidth="86.66665649414062" text="Date Of Birth">
                <cellValueFactory>
                   <PropertyValueFactory property="age" />
                </cellValueFactory>
             </TableColumn>
-            <TableColumn fx:id="colAddress" prefWidth="124.66673278808594" text="Address">
-               <cellValueFactory>
-                  <PropertyValueFactory property="address" />
-               </cellValueFactory>
-            </TableColumn>
-            <TableColumn fx:id="colOccupation" prefWidth="144.0" text="Occupation">
+            <TableColumn fx:id="colOccupation" prefWidth="135.33331298828125" text="Occupation">
                <cellValueFactory>
                   <PropertyValueFactory property="occupation" />
                </cellValueFactory>
             </TableColumn>
-            <TableColumn fx:id="colFatherName" minWidth="0.0" prefWidth="157.33334350585938" text="Father's Name">
-               <cellValueFactory>
-                  <PropertyValueFactory property="fatherName" />
-               </cellValueFactory>
-            </TableColumn>
-            <TableColumn fx:id="colNRC" minWidth="0.0" prefWidth="115.3333740234375" text="NRC NO.">
+            <TableColumn fx:id="colNRC" minWidth="0.0" prefWidth="155.33328247070312" text="NRC NO.">
                <cellValueFactory>
                   <PropertyValueFactory property="nrcNo" />
                </cellValueFactory>
             </TableColumn>
-            <TableColumn fx:id="colClass" minWidth="0.0" prefWidth="190.6666259765625" text="Class">
+            <TableColumn fx:id="colMentor" minWidth="0.0" prefWidth="158.00006103515625" text="Mentor">
+               <cellValueFactory>
+                  <PropertyValueFactory property="mentors" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="colClass" minWidth="0.0" prefWidth="173.99993896484375" text="Class">
                <cellValueFactory>
                   <PropertyValueFactory property="classes" />
                </cellValueFactory>
             </TableColumn>
-            <TableColumn fx:id="colMentor" minWidth="0.0" prefWidth="284.0" text="Mentor">
+            <TableColumn fx:id="colAddress" prefWidth="218.6666259765625" text="Address">
                <cellValueFactory>
-                  <PropertyValueFactory property="mentors" />
+                  <PropertyValueFactory property="address" />
                </cellValueFactory>
             </TableColumn>
          </columns>

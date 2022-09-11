@@ -12,7 +12,13 @@ public class Occupation {
     public static List<Occupation> occupation = List.of(
             new Occupation("Engineer"),
             new Occupation("Developer"),
-            new Occupation("Teacher")
+            new Occupation("Teacher"),
+            new Occupation("Government-Staff"),
+            new Occupation("Doctor"),
+            new Occupation("House-wife"),
+            new Occupation("Student"),
+            new Occupation("Hotel-Chef"),
+            new Occupation("Karate-Sensei")
     );
 
     @Override

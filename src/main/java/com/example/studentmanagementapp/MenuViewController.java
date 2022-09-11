@@ -70,7 +70,6 @@ public class MenuViewController implements Initializable {
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(ManagementApplication.class.getResource(resourceName + ".fxml"));
             Parent currentViewNode = fxmlLoader.load();
-            Scene scene = new Scene(currentViewNode);
 
             stackPane.getChildren().clear();
             stackPane.getChildren().add(currentViewNode);

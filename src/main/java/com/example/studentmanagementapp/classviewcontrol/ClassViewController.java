@@ -31,7 +31,7 @@ public class ClassViewController implements Initializable {
     @FXML
      Button btnDelete;
     @FXML
-     Button btnEdit;
+     Button BtnEdit;
     @FXML
      Button btnSave;
     @FXML
@@ -42,16 +42,11 @@ public class ClassViewController implements Initializable {
     public boolean isOpen = true;
     public static final ClassDataStore dataStore = ClassDataStore.getInstance();
 
-
-    public  String editClassName;
-    public  String editClassFee;
     public int selectedIndex;
     public Classes selectedClass;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
-
         //SaveAction
         btnSave.setOnAction(e -> {
             Classes aClass = new Classes();
@@ -74,11 +69,10 @@ public class ClassViewController implements Initializable {
         });
 
         //EditAction
-        btnEdit.setOnAction(e -> {
+        BtnEdit.setOnAction(e -> {
             selectedIndex = classTableView.getSelectionModel().getSelectedIndex();
             selectedClass = classTableView.getSelectionModel().getSelectedItem();
-            editClassName = selectedClass.getClassName();
-            editClassFee = selectedClass.getClassFee();
+
           if(!(selectedClass == null) && isOpen) {
               try {
                   Stage editStage = new Stage();
@@ -109,9 +103,14 @@ public class ClassViewController implements Initializable {
         selectedClass.setClassName(className);
         selectedClass.setClassFee(classFee);
 
+        //removingOldValue
         dataStore.classesList.remove(selectedIndex);
+        dataStore.classesNameList.remove(selectedIndex);
         classTableView.getItems().clear();
+        //settingNewValue
         dataStore.classesList.add(selectedIndex, selectedClass);
+        dataStore.classesNameList.add(selectedIndex, selectedClass);
+        //addingNewTableView
         classTableView.getItems().addAll(dataStore.classesList);
     }
 

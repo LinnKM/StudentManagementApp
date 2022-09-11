@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
@@ -29,7 +30,7 @@
                 </TableColumn>
               </columns>
             </TableView>
-            <AnchorPane prefHeight="565.0" prefWidth="532.5">
+            <AnchorPane prefHeight="565.0" prefWidth="532.5" style="-fx-background-color: #c3c8d3;">
                <children>
                   <Label layoutX="210.0" layoutY="69.0" text="Add Class">
                      <font>
@@ -38,20 +39,29 @@
                   </Label>
                   <TextField fx:id="txtClassName" layoutX="145.0" layoutY="155.0" prefHeight="25.0" prefWidth="256.0" promptText="ClassName" />
                   <TextField fx:id="txtClassFee" layoutX="145.0" layoutY="208.0" prefHeight="25.0" prefWidth="256.0" promptText="Fee" />
-                  <Button fx:id="btnSave" layoutX="341.0" layoutY="251.0" minWidth="52.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="59.0" style="-fx-background-color: #00AA99;" stylesheets="@Style.css" text="Save">
+                  <Button fx:id="btnSave" layoutX="145.0" layoutY="261.0" minWidth="52.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="256.0" stylesheets="ClassViewStyle.css" text="Save">
                      <font>
                         <Font size="15.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
-                  <Button fx:id="btnEdit" layoutX="56.0" layoutY="504.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="59.0" style="-fx-background-color: #00AA99;" text="Edit">
+                  <Button fx:id="BtnEdit" layoutX="56.0" layoutY="504.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="59.0" stylesheets="ClassViewStyle.css" text="Edit">
                      <font>
                         <Font size="15.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
                   <Button fx:id="btnDelete" layoutX="131.0" layoutY="504.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="71.0" stylesheets="ClassViewStyle.css" text="Delete">
                      <font>
                         <Font size="15.0" />
                      </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
                   </Button>
                </children></AnchorPane>
          </children>

@@ -23,22 +23,22 @@ public class EditClassViewController implements Initializable {
       TextField txtEditFee;
 
     @FXML
-    Button btnEdit;
+    Button BtnEdit;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         //EditAction
-        btnEdit.setOnAction(e -> {
-            if(btnEdit.getText().equals("Edit")) {
-                Stage editStage = (Stage) btnEdit.getScene().getWindow();
+        BtnEdit.setOnAction(e -> {
+            if(BtnEdit.getText().equals("Edit")) {
+                Stage editStage = (Stage) BtnEdit.getScene().getWindow();
                 ClassViewController cViewController = (ClassViewController) editStage.getUserData();
 
-                txtEditClass.setText(cViewController.editClassName);
-                txtEditFee.setText(cViewController.editClassFee);
+                txtEditClass.setText(cViewController.selectedClass.getClassName());
+                txtEditFee.setText(cViewController.selectedClass.getClassFee());
 
-                btnEdit.setText("Save");
-            }else if(btnEdit.getText().equals("Save")){
-                Stage currentStage = (Stage) btnEdit.getScene().getWindow();
+                BtnEdit.setText("Save");
+            }else if(BtnEdit.getText().equals("Save")){
+                Stage currentStage = (Stage) BtnEdit.getScene().getWindow();
                 ClassViewController classViewController = (ClassViewController) currentStage.getUserData();
 
                 classViewController.isEditing(txtEditClass.getText(), txtEditFee.getText());

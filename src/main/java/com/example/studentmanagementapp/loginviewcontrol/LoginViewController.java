@@ -32,10 +32,13 @@ public class LoginViewController implements Initializable {
     Label lblInvalidPassword;
 
     //AdminObject
-    private final Admin admin = new Admin("12345", "12345");
+    private final Admin admin = new Admin("linkk@345", "12345");
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        System.out.println("Hello World");
+
         //OnclickAction
         BtnLogin.setOnAction(e -> {
 
@@ -56,6 +59,8 @@ public class LoginViewController implements Initializable {
                     scene.getStylesheets().add(ManagementApplication.class.getResource("Style.css").toExternalForm());
                     scene.getStylesheets().add(ManagementApplication.class.getResource("StudentViewStyle.css").toExternalForm());
                     scene.getStylesheets().add(ManagementApplication.class.getResource("ClassViewStyle.css").toExternalForm());
+                    scene.getStylesheets().add(ManagementApplication.class.getResource("MentorViewStyle.css").toExternalForm());
+
                     newStage.setScene(scene);
                     newStage.show();
                 }catch (IOException exception){

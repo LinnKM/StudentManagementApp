@@ -21,14 +21,26 @@ public class Classes {
     public static List<Classes> defaultClassesList(){
         return List.of(
                 new Classes("Programming Class", "250000 Ks"),
-                new Classes("Swimming Class", "50000 Ks")
+                new Classes("Swimming Class", "50000 Ks"),
+                new Classes("English 4Skills", "200000 Ks"),
+                new Classes("Art Class", "150000 Ks"),
+                new Classes("Korean Language Basic", "50000 Ks"),
+                new Classes("Health Care Fundamental", "30000 Ks"),
+                new Classes("Cooking Class", "55000 Ks"),
+                new Classes("Karate Class", "30000 Ks")
         );
     }
 
     public static List<Classes> defaultClassesNameList(){
         return List.of(
                 new Classes("Programming Class"),
-                new Classes("Swimming Class")
+                new Classes("Swimming Class"),
+                new Classes("English 4Skills"),
+                new Classes("Art Class"),
+                new Classes("Korean Language Basic"),
+                new Classes("Health Care Fundamental"),
+                new Classes("Cooking Class"),
+                new Classes("Karate Class")
         );
     }
 

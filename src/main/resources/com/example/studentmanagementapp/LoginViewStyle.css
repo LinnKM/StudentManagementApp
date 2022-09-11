@@ -1,25 +1,20 @@
 #BtnLogin{
-   -fx-background-color: #2E79DC;
+   -fx-background-color: #666f80;
    -fx-background-radius: 50px;
    -fx-border-radius: 50px;
 }
 
 #TxtUsername{
-  -fx-border-width: 1px;
-  -fx-border-radius: 5px;
-  -fx-border-style: solid;
-  -fx-border-color: black;
-  -fx-background-color: #EEF4FC;
+     -fx-border: none;
+     -fx-border-bottom : 2px solid green;
 }
 
 #TxtPassword{
-  -fx-border-width: 1px;
-  -fx-border-radius: 5px;
-  -fx-border-style: solid;
-  -fx-border-color: black;
-  -fx-background-color: #EEF4FC;
+     -fx-border :none;
+     -fx-border-bottom : 2px solid green;
+
 }
 
 #BtnLogin:hover{
-  -fx-background-color: #1E5CAE;
+  -fx-background-color: #5B6371;
 }

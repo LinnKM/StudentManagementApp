@@ -1,13 +1,19 @@
 #btnDelete{
-  -fx-background-color: transparent;
-   -fx-border-radius: 8px;
-   -fx-border-width: 1.5px;
-   -fx-border-color: black;
-   -fx-text-fill: red;
+  -fx-background-color: tomato;
+  -fx-text-fill: #fff;
 }
 
-#btnDelete:hover{
-   -fx-background-color: red;
-   -fx-background-radius: 8px;
-   -fx-text-fill: #ffffff;
+#BtnEdit{
+   -fx-background-color: #666f80;
+   -fx-text-fill: #fff;
+}
+
+#btnSave{
+   -fx-background-color: #666f80;
+   -fx-text-fill: #fff;
+}
+
+#btnCancel{
+  -fx-background-color: tomato;
+  -fx-text-fill: #fff;
 }

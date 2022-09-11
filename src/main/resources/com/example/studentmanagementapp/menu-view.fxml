@@ -12,7 +12,7 @@
    <children>
       <HBox fx:id="hBox" alignment="CENTER" prefHeight="43.0" prefWidth="1065.0" spacing="75.0" style="-fx-background-color: #666f80;" stylesheets="@Style.css">
          <children>
-            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="330.0" stylesheets="@Style.css" text="Students" >
+            <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="330.0" stylesheets="@Style.css" text="Students">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
